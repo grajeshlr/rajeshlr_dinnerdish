@@ -1,6 +1,6 @@
 class Comment < ApplicationRecord
+    validates :comment, presence: true
     belongs_to :user
     belongs_to :item
-    validates :item_id,  presence: true
-    validates :user_id,  presence: true
-end
+  end
+  
